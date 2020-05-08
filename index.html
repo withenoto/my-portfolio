@@ -6,15 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body>
+    <script>
+      document.getElementsByTagName("nav").style.display = "none";
+    </script>
+    <!-- Nav Bar -->
+    <!-- <nav>
+      <a href="#"
+        ><div class="close">
+          <p>close</p>
+          <img src="icon_close.png" /></div
+      ></a>
+      <ul>
+        <a href="#"><li>home</li></a>
+        <a href="#"><li>about</li></a>
+        <a href="#"><li>works</li></a>
+        <a href="#"><li>contact</li></a>
+      </ul>
+    </nav> -->
+
     <!-- Header -->
     <header>
-      <div id="home-button">home</div>
-      <div id="burger-menu">
-        <p>menu</p>
-        <img src="burger-icon.png" />
-      </div>
+      <a href="index.html"><div id="home-button">home</div></a>
+      <a href="#"
+        ><div class="burger-menu">
+          <p>menu</p>
+          <img src="icon_menu.png" /></div
+      ></a>
     </header>
 
     <!-- Introduction -->
@@ -36,25 +56,54 @@
       <h2>my <span class="line-through">works</span></h2>
       <div>
         <div class="first-row">
-          <div class="portfolio-project">
-            <img src="/portfolio_1.jpg" alt="" />
-          </div>
-          <div class="portfolio-project">
-            <img src="/portfolio_2.jpg" alt="" />
-          </div>
-          <div class="portfolio-project">
-            <img src="/portfolio_3.jpg" alt="" />
-          </div>
+          <a
+            href="https://medium.com/@laramarlenpetersen/re-designing-the-event-website-of-48-stunden-neuk%C3%B6lln-cd0fa91d297"
+            target="_blank"
+            ><div
+              data-content="Re-Design of the Event Website of '48 Stunden Neukölln'"
+              class="portfolio-project"
+            >
+              <img src="/portfolio_1.jpg" alt="" /></div
+          ></a>
+          <a
+            href="https://medium.com/@laramarlenpetersen/developing-an-online-mag-for-the-eco-conscious-ade324c1d2d5"
+            ><div
+              data-content="Developing an Online Magazine for the Eco-Conscious"
+              class="portfolio-project"
+            >
+              <img src="/portfolio_2.jpg" alt="" /></div
+          ></a>
+          <a
+            href="https://uxdesign.cc/adding-a-split-the-bill-feature-to-lieferando-6e68da1e7ebd"
+            ><div
+              data-content="Adding a 'Split the Bill' Feature to Lieferando"
+              class="portfolio-project"
+            >
+              <img src="/portfolio_3.jpg" alt="" /></div
+          ></a>
 
-          <div class="portfolio-project">
-            <img src="/portfolio_4.jpg" alt="" />
-          </div>
-          <div class="portfolio-project">
-            <img src="/portfolio_5.jpg" alt="" />
-          </div>
-          <div class="portfolio-project">
-            <img src="#" alt="" />
-          </div>
+          <a
+            href="https://medium.com/@laramarlenpetersen/developing-an-engaging-online-learning-app-for-teens-b6f1d4d7e5d9?source=---------6------------------"
+            ><div
+              data-content="Developing an Engaging Online Learning App for Teens"
+              class="portfolio-project"
+            >
+              <img src="/portfolio_4.jpg" alt="" /></div
+          ></a>
+          <a href="https://stopp-antisemitismus.de/"
+            ><div
+              data-content="Wordpress Setup of 'Stopp Antisemitismus'"
+              class="portfolio-project"
+            >
+              <img src="/portfolio_5.jpg" alt="" /></div
+          ></a>
+          <a href="https://github.com/withenoto/design-meets-craft"
+            ><div
+              data-content="Building an MVP for 'Design meets Craft' with React"
+              class="portfolio-project"
+            >
+              <img src="/portfolio_6.jpg" alt="" /></div
+          ></a>
         </div>
       </div>
     </section>
@@ -66,7 +115,7 @@
         like what i do? want to have some kick-ass website? just a click away
         from gettin' in touch:
       </h3>
-      <button>contact</button>
+      <a href="mailto:laramarlenpetersen@gmail.com"><button>contact</button></a>
     </section>
 
     <!-- Footer  -->
@@ -74,9 +123,9 @@
     <footer>
       <p>© 2020 withenoto</p>
       <div id="social-icons">
-        <a href="#">Instagram</a>
-        <a href="#">Medium</a>
-        <a href="#">Github</a>
+        <a href="https://medium.com/@laramarlenpetersen">Medium</a>
+        <a href="https://github.com/withenoto">Github</a>
+        <a href="https://www.instagram.com/withenoto/">Instagram</a>
       </div>
     </footer>
   </body>
