@@ -1,0 +1,206 @@
+/* Font Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  color: #747474;
+}
+
+.highlight-color {
+  color: #cdfdc8;
+}
+
+.line-through {
+  background-color: #cdfdc8;
+}
+
+/* Headlines */
+
+h1 {
+  font-size: 350px;
+  font-family: "Ubuntu", sans-serif;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 60px;
+  color: #2b2b2b;
+  margin: 100px 0 100px 4rem;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  color: #2b2b2b;
+  width: 60vw;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* Header Styles */
+
+header {
+  margin: 0 5rem;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home-button {
+  min-height: 60px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #2b2b2b;
+  background-image: url(/portfolio_code/background-dot.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#burger-menu {
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #2b2b2b;
+}
+
+#burger-menu img {
+  width: 25px;
+  margin-left: 20px;
+}
+
+/* Introduction Section  */
+
+#intro-section {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+#intro-section p {
+  font-size: 30px;
+  line-height: 60px;
+  width: 80%;
+}
+
+#intro-image {
+  display: flex;
+  justify-content: center;
+}
+
+#intro-image img {
+  width: 600px;
+}
+
+/* Portfolio Section */
+
+.first-row,
+.last-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.portfolio-project img {
+  width: 100%;
+}
+
+/* Contact Section  */
+
+#contact-section {
+  margin: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-section button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #2b2b2b;
+  color: white;
+  padding: 35px 120px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 0 5rem;
+  height: 200px;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#social-icons {
+  display: flex;
+}
+
+#social-icons a {
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 100px;
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+/* Transformations */
+
+#home-button,
+#burger-menu,
+#contact-section button,
+#social-icons a {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#home-button:hover,
+#burger-menu:hover,
+#contact-section button:hover,
+#social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* h1 {
+  transition: transform 0.5s ease-in-out, color 0.5s;
+}
+
+h1:hover {
+  color: #cdfdc8;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: grey;
+  transform: scale(1.03);
+} */
+
+/* #intro-section img {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#intro-section img:hover {
+  transform: scale(1.03);
+  opacity: 50%;
+} */
